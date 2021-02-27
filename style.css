@@ -141,6 +141,12 @@ section {
     margin-bottom: 0px;
 }
 
+.text-dark {
+    color: rgb(54, 53, 53) ;
+    font-weight: 600;
+}
+
+
 /* BOTONES */
 .btn {
     font-size: 14px;
