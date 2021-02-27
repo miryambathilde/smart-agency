@@ -32,6 +32,11 @@ section {
     padding: 120px 0;
 }
 
+/* ABOUT US */
+.bg-light-grey{
+    background-color: #f5f5f5;
+}
+
 /* TOP MARGIN XS */
 .topmargin-xs{
     margin-top: 15px;
@@ -146,6 +151,19 @@ section {
     font-weight: 600;
 }
 
+/* MEMBER CONTAINER */
+
+.member-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.member-details {
+    position: absolute;
+    color: whitesmoke;
+    bottom: 0px;
+    left: 20px;
+}
 
 /* BOTONES */
 .btn {
