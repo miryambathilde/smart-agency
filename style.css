@@ -22,6 +22,11 @@ p {
     margin-top: 40px;
 }
 
+a:hover {
+    text-decoration: none;
+    color:rgb(46, 45, 45);
+}
+
 /* SECTIONS para todas las secciones que realicemos*/
 section {
     padding: 120px 0;
@@ -97,7 +102,46 @@ section {
     margin-top: 50px;
 }
 
-/* botones */
+/* PORTFOLIO */
+
+.portfolio-container{
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+/* efecto IMAGENES */
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+/* CERRAMOS EFECTO IMAGENES */
+
+.portfolio-details{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+
+.portfolio-details a h2, .portfolio-details a p {
+    color: whitesmoke;
+    margin-top: 0px;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
+/* BOTONES */
 .btn {
     font-size: 14px;
     padding: 15px 26px;
@@ -117,7 +161,7 @@ section {
     margin-top: 80px;
 }
 /* esto es para todos los botones con iconos */
-.btn i{
+.btn i {
     font-size: 14px;
     margin-left: 5px;
 }
