@@ -1,0 +1,29 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+/* LOGO DARK */
+.logo-brand{
+    min-width: 160px;
+    max-width: 180px ;
+}
+
+
+
+/* BARRA DE NAVEGACION */
+.navbar {
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    min-height: 100px;
+}
+
+.nav-link{
+    color: rgb(46, 45, 45);
+    font-weight: 600;
+    
+}
+
+.nav-link:hover {
+    color: rgb(141, 136, 136);
+    font-weight: 600;
+    
+}
