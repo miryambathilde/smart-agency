@@ -1,6 +1,35 @@
 body{
     font-family: 'Titillium Web', sans-serif;
 }
+
+h1 {
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+p {
+    font-size: 18px;
+    color:#999999;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* TOP MARGIN XS */
+.topmargin-xs{
+    margin-top: 15px;
+}
+
+/* TOP MARGIN SMALL */
+.topmargin-sm {
+    margin-top: 30px;
+}
+
+/* TOP MARGIN LARGE */
+.topmargin-lg {
+    margin-top: 60px;
+}
+
 /* LOGO DARK */
 .logo-brand{
     min-width: 160px;
@@ -25,6 +54,7 @@ body{
 .nav-link{
     color: rgb(46, 45, 45);
     font-weight: 600;
+    margin: 0px 15px;
     
 }
 
@@ -42,3 +72,60 @@ body{
     min-height: 700px;
     color:white;
 }
+
+/* contenido HERO texto */
+.content-center{
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    
+}
+/* parrafo en section HERO */
+#hero p{
+    color: white;
+    font-size: 20px;
+}
+
+/* botones */
+.btn {
+    font-size: 14px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 2px;
+    display: inline-block;
+
+}
+
+/* boton blanco */
+.btn-light{
+    background-color: white;
+    color:rgb(46, 45, 45);
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* esto es para todos los botones con iconos */
+.btn i{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* MEDIA QUERIES BOOTSTRAP */
+
+@media (max-width: 575.98px) {
+    h1{
+        font-size: 40px;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+
+@media (min-width: 1200px) { ... }
