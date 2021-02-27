@@ -4,7 +4,7 @@ body{
 /* LOGO DARK */
 .logo-brand{
     min-width: 160px;
-    max-width: 180px ;
+    max-width: 180px;
 }
 
 /* icono MENU RESPONSIVE */
@@ -32,4 +32,13 @@ body{
     color: rgb(141, 136, 136);
     font-weight: 600;
     
+}
+
+/* SECTION HERO IMAGEN */
+#hero{
+    background-image: url('/images/hero.jpg') ;
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color:white;
 }
