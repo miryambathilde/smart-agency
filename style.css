@@ -1,5 +1,55 @@
+:root {
+    --dark-color: #1a1a1a;
+    --white-color: white;
+    --light-grey-color: #A29F9F;
+    --gold-color: #ffb944;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     font-family: 'Titillium Web', sans-serif;
+}
+
+/* BACKGROUNDS Y COLORES */
+
+.bgDark { background-color: var(--dark-color); }
+.bgLight { background-color: var(--white-color); }
+.bgLightGrey { background-color: var(--light-grey-color); }
+
+.colorDark { color: var(--dark-color) !important; }
+
+/* ENCABEZADOS */
+h1 { font-size: 66px; 
+    font-weight: 700; 
+    line-height: 80px; 
+}
+h2 { font-size: 48px; 
+    margin-bottom: 30px; 
+}
+h3 { 
+    font-size: 33px; 
+}
+h5 { 
+    margin-bottom: 0px; 
+}
+
+/* PARRAFOS */
+p {
+    font-size: 18px;
+    color: var(--dark-color);
+    opacity: .5;
+    line-height: 1.8;
+    margin-bottom: 0px;
 }
 
 h1 {
@@ -18,18 +68,9 @@ h5 {
     margin-bottom: 0px;
 }
 
-p {
-    font-size: 18px;
-    color:#999999;
-    line-height: 1.8;
-    margin-bottom: 0;
-    margin-top: 40px;
-}
+a:hover { text-decoration: none; }
 
-a:hover {
-    text-decoration: none;
-    color:rgb(46, 45, 45);
-}
+
 
 /* SECTIONS para todas las secciones que realicemos*/
 section {
@@ -90,7 +131,7 @@ section {
 
 /* SECTION HERO IMAGEN */
 #hero{
-    background-image: url('/images/hero1.jpg') ;
+    background-image: url('/images/hero.jpg') ;
     background-size: cover;
     padding-top: 90px;
     min-height: 700px;
@@ -173,6 +214,7 @@ section {
     padding-left: 0;
     list-style: none;
     margin-bottom: 4px;
+    color: var(--gold-color);
 }
 
 /* PRICING */
@@ -209,6 +251,81 @@ section {
 .plans ul {
     list-style-type: square;
 }
+
+/* TESTIMONIOS */
+
+.divider { 
+    border-bottom: 2px solid var(--light-grey-color); 
+}
+.carousel {
+    min-height: 240px;
+    padding: 40px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.carousel-item p {
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+.carousel-indicators li {
+    background-color: var(--dark-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin: 0 8px;
+}
+
+.carousel-control-next, .carousel-control-prev { 
+    color: var(--white-color);
+    opacity: 1;
+    width: 5%;
+}
+
+.control-button {
+    background-color: var(--dark-color);
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid var(--dark-color);
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-user {
+    max-width: 240px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.testimonial-user h6 {
+    margin-bottom: 0px;
+}
+
+.testimonial-user span {
+    font-size: 12px;
+}
+
+.testimonial-user img {
+    border-radius: 50%;
+    max-width: 50px;
+    text-align: center;
+}
+
+.rating .list-inline i {
+    color: var(--gold-color);
+    font-size: 26px;
+}
+
+
 /* BOTONES */
 .btn {
     font-size: 14px;
@@ -216,7 +333,6 @@ section {
     min-width: 160px;
     border-radius: 2px;
     display: inline-block;
-
 }
 
 .btn-dark {
@@ -233,7 +349,12 @@ section {
 
 }
 
-.btn-transparent:hover {
+.btn-alternate {
+    background-color: transparent;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+}
+.btn-alternate:hover {
     color: white;
 }
 
