@@ -14,6 +14,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+h5 {
+    margin-bottom: 0px;
+}
+
 p {
     font-size: 18px;
     color:#999999;
@@ -165,6 +169,46 @@ section {
     left: 20px;
 }
 
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+/* PRICING */
+.pricing-container {
+    margin: 15px 0;
+}
+
+.plans {
+    padding: 50px 80px;
+    border-radius: 2px;
+    min-width: 450px;
+}
+
+.plan-light {
+    background-color: whitesmoke;
+    border: 2px solid rgb(53, 52, 52);
+}
+
+.plan-dark {
+    background-color: rgb(36, 35, 35);
+    border: 2px solid rgb(36, 35, 35);
+    color: whitesmoke;
+}
+
+.plans h2 {
+   font-size: 70px;
+   font-weight: 600; 
+}
+
+.plans h2 span {
+    font-size: 30px;
+}
+
+.plans ul {
+    list-style-type: square;
+}
 /* BOTONES */
 .btn {
     font-size: 14px;
@@ -173,6 +217,28 @@ section {
     border-radius: 2px;
     display: inline-block;
 
+}
+
+.btn-dark {
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+    border: 2px solid rgb(27, 27, 27);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 30px;
+
+}
+
+.btn-transparent:hover {
+    color: white;
+}
+
+.full-width {
+    width: 100%;
 }
 
 /* boton blanco */
@@ -197,15 +263,30 @@ section {
         font-size: 40px;
         line-height: normal;
     }
+    .portfolio-details h2 {
+        font-size: 30px;
+    }
+    .plans {
+        min-width: unset;
+        padding: 40px;
+    }
 }
 
-/* @media (min-width: 576px) and (max-width: 767.98px) { ... }
+/* @media (min-width: 576px) and (max-width: 767.98px) { ... }*/
 
 
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .plans {
+        min-width: unset;
+        padding: 40px 20px;
+    }
+    .portfolio-details h2 {
+        font-size: 30px;
+    }
+ }
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+/*@media (min-width: 992px) and (max-width: 1199.98px) { ... }
 
 
-@media (min-width: 1200px) { ... } */
+@media (min-width: 1200px) { ... }
