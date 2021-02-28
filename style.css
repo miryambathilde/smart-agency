@@ -349,6 +349,15 @@ section {
 
 }
 
+.btn-info {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    font-size: 18px;
+    font-weight: 600;
+}
 .btn-alternate {
     background-color: transparent;
     color: var(--white-color);
