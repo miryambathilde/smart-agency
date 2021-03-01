@@ -444,8 +444,34 @@ footer .list-inline .list-inline-item {
 
 .clearfix {
     color: var(--dark-color);
-    margin: 15px 5px;
+    margin: 35px 10px;
 }
+
+.clearfix h1 {
+    margin: 25px !important;
+    text-align: center;
+}
+.clearfix p {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.clearfix img {
+    float: left;
+    width: 700px;
+    height: 550px;
+    margin: 13px 15px 5px 5px;
+
+}
+
+/* CONTACT */
+
+.container-map h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
 /* MEDIA QUERIES BOOTSTRAP */
 
 @media (max-width: 575.98px) {
@@ -468,6 +494,16 @@ footer .list-inline .list-inline-item {
         padding: 20px 0 !important;
         font-size: 15px;
     }
+    .skewed-header {
+        min-width: unset;
+        padding: 100%;
+    }
+    .clearfix img {
+        min-width: unset;
+    }
+    .clearfix p {
+        display: block;
+    } 
 }
 
 @media (max-width: 575.98px) { 
