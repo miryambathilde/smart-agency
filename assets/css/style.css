@@ -440,7 +440,12 @@ footer .list-inline .list-inline-item {
     padding: 10px 15px;
 }
 
+/* ABOUT */
 
+.clearfix {
+    color: var(--dark-color);
+    margin: 15px 5px;
+}
 /* MEDIA QUERIES BOOTSTRAP */
 
 @media (max-width: 575.98px) {
