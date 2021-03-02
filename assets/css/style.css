@@ -252,7 +252,6 @@ footer .list-inline .list-inline-item {
 }
 
 .clearfix h1 {
-    marginT ;
     text-align: center;
 }
 .clearfix p {
@@ -281,20 +280,6 @@ footer .list-inline .list-inline-item {
     margin-left: 10px;
 }
 
-.card {
-    display: block;
-    position: 
-}
-.card-header {
-    font-size: 50px;
-    text-align: center;
-}
-
-.card-body .contact-data {
-    font-size: 40px;
-    text-align: center;
-    
-}
 
 /* MEDIA QUERIES BOOTSTRAP */
 
