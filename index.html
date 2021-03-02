@@ -19,7 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <!-- IONIC ICONS-->
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/assets/images/favicon.png" />
@@ -30,7 +31,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <!-- imagen logo -->
-            <a class="navbar-brand" href="#"><img src="/assets/images/logo-dark.svg" class="logo-brand" alt="logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="/assets/images/logo-dark.svg" class="logo-brand" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- icono menu responsive usage -->
@@ -40,22 +41,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="home">Home</a>
+                        <a class="nav-link" href="index.html" id="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="portfolio">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html" id="portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about.html" id="aboutus">About us</a>
+                        <a class="nav-link" href="about.html" id="aboutus">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="pricing">Pricing</a>
+                        <a class="nav-link" href="princing.html" id="pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="testimonial">Testimonial</a>
+                        <a class="nav-link" href="testimonial.html" id="testimonial">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html" id="contact">Contact</a>
+                        <a class="nav-link" href="contact.html" id="contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +93,7 @@
                             <p>-App and Digital Products</p>
                         </a>
                     </div>
-                    <img src="/assets/images/cocacola.jpg" class="img-fluid" alt="porfolio 1">
+                    <a href="https://www.cocacola.es/es/home/" target="_blank"><img src="/assets/images/cocacola.jpg" class="img-fluid"></a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -105,7 +106,7 @@
                             <p>-App and Digital Products</p>
                         </a>
                     </div>
-                    <img src="/assets/images/reloj.jpg" class="img-fluid" alt="porfolio 2">
+                    <a href="https://festina.com/es-ES" target="_blank"><img src="/assets/images/reloj.jpg" class="img-fluid"></a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -118,7 +119,7 @@
                             <p>-App and Digital Products</p>
                         </a>
                     </div>
-                    <img src="/assets/images/portfolio-03.jpg" class="img-fluid" alt="porfolio 3">
+                    <a href="https://vinta.co/" target="_blank"><img src="/assets/images/portfolio-03.jpg" class="img-fluid"></a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -131,7 +132,7 @@
                             <p>-App and Digital Products</p>
                         </a>
                     </div>
-                    <img src="/assets/images/porsche1.jpg" class="img-fluid" alt="porfolio 4">
+                    <a href="https://www.porsche.com/spain/" target="_blank"><img src="/assets/images/porsche1.jpg" class="img-fluid"></a>
                 </div>
             </div>
         </div>
@@ -363,27 +364,27 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Name">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Last name">
+                                <input type="text" class="form-control" id="lastname" placeholder="Last name">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="email" class="form-control" id="" placeholder="Email">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="" placeholder="Company name">
+                                <input type="text" class="form-control" id="company" placeholder="Company name">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="number" class="form-control" id="" placeholder="Phone number">
+                                <input type="number" class="form-control" id="phone" placeholder="Phone number">
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -400,18 +401,20 @@
         <div class="container">
             <img src="assets/images/logo-light.svg" class="logo-brand" alt="logo">
             <ul class="list-inline">
-                <li class="list-inline-item footer-menu"><a href="#">Home</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Portfolio</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">About us</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Pricing</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Contact</a></li>
+                <li class="list-inline-item footer-menu"><a href="index.html">Home</a></li>
+                <li class="list-inline-item footer-menu"><a href="portfolio.html">Portfolio</a></li>
+                <li class="list-inline-item footer-menu"><a href="about.html">About us</a></li>
+                <li class="list-inline-item footer-menu"><a href="princing.html">Pricing</a></li>
+                <li class="list-inline-item footer-menu"><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><img src="assets/images/instagram.svg" class="img-fluid"></a></li>
-                <li class="list-inline-item"><a href="#"><img src="assets/images/facebook.svg" class="img-fluid"></a></li>
-                <li class="list-inline-item"><a href="#"><img src="assets/images/twitter.svg" class="img-fluid"></a></li>
-                <li class="list-inline-item"><a href="#"><img src="assets/images/youtube.svg" class="img-fluid"></a></li>
-                <li class="list-inline-item"><a href="#"><img src="assets/images/dribbble.svg" class="img-fluid"></a></li>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.instagram.com/?hl=es"target="_blank"><img src="assets/images/instagram.svg" class="img-fluid"></a></li>
+                    <li class="list-inline-item"><a href="https://es-es.facebook.com/"target="_blank"><img src="assets/images/facebook.svg" class="img-fluid"></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/?lang=es"target="_blank"><img src="assets/images/twitter.svg" class="img-fluid"></a></li>
+                    <li class="list-inline-item"><a href="https://www.youtube.com/?hl=es&gl=ES"target="_blank"><img src="assets/images/youtube.svg" class="img-fluid"></a></li>
+                    <li class="list-inline-item"><a href="https://dribbble.com" target="_blank"><img src="assets/images/dribbble.svg" class="img-fluid"></a></li>
+                </ul>
             </ul>
             <small>©2020 All Rights Reserved. Created by Miryam Bathilde <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" class="font-weight-bold" target="_blank" rel="noopener"> | Template Bootstrap</a></small>
         </div>
